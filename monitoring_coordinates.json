@@ -1,0 +1,63 @@
+{
+  "table": "monitorings_coordinates",
+  "sync_time": "24.04.2015",
+  "objects":
+  [
+    {
+      "id": 1,
+      "name":"МГУ",
+      "coord":[55.703935,37.52867],
+      "type":"point",
+      "params": {
+        "is_available": true,
+        "monitor_type": "station",
+        "url": "http://www.mosecom.ru/air/air-today/station/mgu/table.html",
+        "url_type": "mosecom",
+        "controlled_factors": ["co", "oz", "no2", "no", "pm10"],
+        "controlled_frequency_h": 1
+      }
+    },
+    {
+      "id": 4,
+      "name":"Казакова",
+      "coord":[55.7628671,37.6638344],
+      "type":"point",
+      "params": {
+        "is_available": true,
+        "monitor_type": "station",
+        "url": "http://www.mosecom.ru/air/air-today/station/kazak/table.html",
+        "url_type": "mosecom",
+        "controlled_factors": ["ch4", "ch", "chx"],
+        "controlled_frequency_h": 1
+      }
+    },
+    {
+      "id": 2,
+      "name":"Шаболовская",
+      "coord":[55.7147819,37.6050489],
+      "type":"point",
+      "params": {
+        "is_available": true,
+        "monitor_type": "station",
+        "url": "http://www.mosecom.ru/air/air-today/station/shabol/table.html",
+        "url_type": "mosecom",
+        "controlled_factors": ["co", "no2", "no", "pm10", "pm2.5"],
+        "controlled_frequency_h": 1
+      }
+    },
+    {
+      "id": 3,
+      "name": "Глебовская",
+      "coord": [55.8154194,37.7128781],
+      "type": "point",
+      "params": {
+        "is_available": true,
+        "monitor_type": "station",
+        "url": "http://www.mosecom.ru/air/air-today/station/glebovskaya/table.html",
+        "url_type": "mosecom",
+        "controlled_factors": ["co", "nh3", "h2s", "ch4", "ch", "no2", "chx", "no", "pm10", "pm2.5"],
+        "controlled_frequency_h": 1
+      }
+    }
+  ]
+}

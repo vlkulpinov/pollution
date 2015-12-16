@@ -1,0 +1,26 @@
+{
+  "name": "main renderer moscow",
+  "layers": [
+    {
+      "scale": 11,
+      "min_x": 1235,
+      "max_x": 1240,
+      "min_y": 638,
+      "max_y": 643
+    },
+    {
+      "scale": 12,
+      "min_x": 2470,
+      "max_x": 2480,
+      "min_y": 1276,
+      "max_y": 1286
+    },
+    {
+      "scale": 13,
+      "min_x": 4940,
+      "max_x": 4960,
+      "min_y": 2552,
+      "max_y": 2572
+    }
+  ]
+}
