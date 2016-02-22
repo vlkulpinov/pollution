@@ -20,15 +20,18 @@ logging.basicConfig(format = u'%(filename)s# %(levelname)-8s [%(asctime)s]  %(me
 def convert_color(pollution):
     # logging.debug(pollution)
 
-    red = 30 + (pollution - 0.18) / (0.32 - 0.18) * 225
-    green = 225 - (pollution - 0.18) / (0.32 - 0.18) * 225
+    red = 30 + (pollution - 0.24) / (0.5 - 0.24) * 225
+    green = 225 - (pollution - 0.24) / (0.5 - 0.24) * 225
 
     # if pollution >= 0.27:
     #     logging.debug(pollution)
 
-    if 0.18 <= pollution <= 0.32:
+    if 0.24 <= pollution <= 0.5:
         return (int(red), int(green), 0, STANDARD_ALPHA)
-    return (255, 0, 0, STANDARD_ALPHA)
+    elif 0.24 > pollution:
+        return (30, 225, 0, STANDARD_ALPHA)
+    else:
+        return (255, 0, 0, STANDARD_ALPHA)
 
 
 def save_tile(img, x, y, z):
@@ -64,10 +67,6 @@ def get_point_color(p, monitor_data):
     coef_sum = 0
     for monitor_record in monitor_data:
         cur_dist = geolib.points2distance(monitor_record['point'], p)
-        # if cur_dist <= 1000:
-        #    logging.info(np.exp(-(cur_dist / sum_dist) * 10))
-        # logging.info(p)
-        # logging.info(cur_dist)
         pollution += monitor_record['value'] * np.exp(-(cur_dist / sum_dist) * 10)
         coef_sum += np.exp(-(cur_dist / sum_dist) * 10)
 
