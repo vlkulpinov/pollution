@@ -1,29 +1,30 @@
-## Визуализация карты загрязнения
+This is project for visualization of pollution in Moscow, Russia. Uses public available data from MosMonitoring
 
-1. Организовать репозиторий с кодом
+## Visualiztion of pollution map
+
+TODO:
+1. Rearrange repository
     * geolib
     * db
     * tests
     * renderer
     * front
-2. Подумать над использованием SQLAlchemy
-3. Поднять хостинг
-4. Добавить другие точки мониторинга
-5. Подумать над непрерывной интеграцией
-6. Довезти код до гитхаба
-7. Добавить масштабов
-8. Автоматическое обновление
+2. Try to setup SQLAlchemy
+3. Run on hosting
+4. Add more monitoring points
+5. Add Jenkins
+6. Add scales
+7. Automathic update
 
 
-### Фичи:
-#### Интерфейс
-1. Интерактивный клик по карте (показания в данной точке)
-2. Интерактивный клик по карте (источники загрязнения/очищения в данной точке)
-3. Добавить информации по данным
+### Features:
+#### Interface
+1. Interactive click on map
+2. Add more metainfo to data
 
-#### Качество
-1. Дороги - машинное обучение и эвристики
+#### Quality
+1. Increase pollution on roads: machine learning over data from manual measures (with Arduino)
 2.
 
-#### Прочее
-1. Рендеринг тайлов на клиенте
+#### Misc
+1. JS renderer (to render tiles on client-side)
